@@ -4,7 +4,15 @@ Write here
 <h2>Code</h2>
 Concatenate CSV
 
-- Merges all the annotated CSVs together into a one .csv file
+- Merges all the annotated CSVs together into one .csv file.
+
+Annotation Impact Bar Plot
+
+- Visualizes each SRA Run mutation impact with the use of R.
+
+QC plot
+
+- Visualize viable strains for the experiment considering genomic range to the reference genome of respective bacterium.
 
 <h2>Plots</h2>
 
