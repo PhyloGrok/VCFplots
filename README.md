@@ -1,6 +1,6 @@
 <h1>Mereck Internship 2024</h1>
 <h2>Data</h2>
-  <p> The Virtual Contact File (VCF) was obtained from the National Center for Biotechnology Information (NCBI) Sequence Read Archives. 
+  <p> The Variant Calling Format (VCF) was obtained from the National Center for Biotechnology Information (NCBI) Sequence Read Archives. 
   The files retrieved were in FASTQ format, a widely used text-based format containing raw data of biological sequences. This format is 
   essential as it includes both the nucleotide sequence and their corresponding quality score (the accuracy of each nucleotide in a biological sequence).
   </p>
