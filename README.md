@@ -18,7 +18,7 @@ QC plot
 - Visualize viable strains for the experiment considering genomic range to the reference genome of respective bacterium.
 
 <h2>Plots</h2>
-
+hi Chewie
 
 <h2>Results</h2>
 
