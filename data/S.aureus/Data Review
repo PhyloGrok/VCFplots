@@ -5,5 +5,4 @@ The files retrieved were in FASTQ format, a widely used text-based format contai
 essential as it includes both the nucleotide sequence and their corresponding quality score (the accuracy of each nucleotide in a biological sequence).
 </p>
 
-<p> Furthermore, the team assembled the data based on the reference genome to ensure accurate analysis. 
-</p>
+
