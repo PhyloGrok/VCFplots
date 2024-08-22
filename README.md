@@ -19,7 +19,6 @@ QC plot
 
 <h2>Plots</h2>
 hi Chewie
-<img src= SA_Impact_Plot.png alt= "Staphylococcus Aureus Impact Plot">
 <h2>Results</h2>
 
 <h2>Acknowledgements</h2>
