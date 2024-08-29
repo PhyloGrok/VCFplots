@@ -8,7 +8,7 @@
   </p>
 <h2>Code</h2>
 
-(Concatenate CSV)[https://github.com/PhyloGrok/VCFplots/blob/main/code/Concatenate_CSVs.R]
+[Concatenate CSV](https://github.com/PhyloGrok/VCFplots/blob/main/code/Concatenate_CSVs.R)
 
 - Merges all the annotated CSVs together into one .csv file.
 
