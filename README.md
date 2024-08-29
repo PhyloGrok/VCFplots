@@ -1,6 +1,6 @@
 <h1>Merck Internship 2024</h1>
 <h2>Introduction</h2>
-HEre write
+  <p>Understanding genetic variations and their impacts is crucial in the study of microbial evolution and antibiotic resistance. Deletions, missense mutation, and other types of mutations create variants, which result in differing degrees of protein alteration and play a significant role in the adaptability and survival of bacteria. Visualizing these mutations using tools like circus plots and stacked bar plots allows researchers to identify patterns and trends across different strains. By integrating these visualizations with the theory of neutral evolution which favors advantageous mutations are more likely to persist  we can better comprehend the dynamics of bacterial evolution for antibiotic resistance in their genome. This project aims to process vast genomic datasets to automate variant analysis, and ultimately create a comprehensive database that will enhance our understanding of genomic mutations and  inform possible further genome studies against antibiotic resistance.</p>
 <h2>Data</h2>
   <p> The Variant Calling Format (VCF) was obtained from the National Center for Biotechnology Information (NCBI) Sequence Read Archives. 
   The files retrieved were in FASTQ format, a widely used text-based format containing raw data of biological sequences. This format is 
@@ -17,10 +17,10 @@ Annotation Impact Bar Plot
 
 QC plot
 
-- Visualize viable strains for the experiment considering genomic range to the reference genome of respective bacterium.
+- Visualize viable strains for the experiment considering genomic range to the reference genome of the respective bacterium.
 
 <h2>Plots</h2>
-hi Chewie
+
 <h2>Results</h2>
 
 <h2>Acknowledgements</h2>
