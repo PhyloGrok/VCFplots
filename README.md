@@ -7,6 +7,7 @@
   essential as it includes both the nucleotide sequence and their corresponding quality score (the accuracy of each nucleotide in a biological sequence).
   </p>
 <h2>Code</h2>
+
 (Concatenate CSV)[https://github.com/PhyloGrok/VCFplots/blob/main/code/Concatenate_CSVs.R]
 
 - Merges all the annotated CSVs together into one .csv file.
