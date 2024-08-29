@@ -1,4 +1,4 @@
-<p align="left">
+<p align="right">
   
   <img src="https://github.com/PhyloGrok/VCFplots/blob/main/Images/merck_logo.png" width="100" height="auto">
 
