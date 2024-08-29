@@ -1,7 +1,8 @@
 <h1>Merck Internship 2024</h1>
 <p align="right>
-  <img src="https://github.com/PhyloGrok/VCFplots/blob/main/Images/UMBC_logo.png" width="200" height="100">
-  <img src="https://github.com/PhyloGrok/VCFplots/blob/main/Images/merck_logo.png" width="200" height="100">
+  <img src="https://github.com/PhyloGrok/VCFplots/blob/main/Images/UMBC_logo.png" width="100" height="50">
+  
+  <img src="https://github.com/PhyloGrok/VCFplots/blob/main/Images/merck_logo.png" width="100" height="50">
 </p>
 
 <h2>Introduction</h2>
