@@ -16,7 +16,7 @@
 
 - Visualizes each SRA Run mutation impact with the use of R.
 
-QC plot
+[QC plot](https://github.com/PhyloGrok/VCFplots/blob/main/code/QC_Plot_SA.R)
 
 - Visualize viable strains for the experiment considering genomic range to the reference genome of the respective bacterium.
 
