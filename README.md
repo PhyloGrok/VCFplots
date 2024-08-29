@@ -30,7 +30,7 @@
 
 <h3>Pseudomonas Aeruginosa</h3>
 
-<img src="https://github.com/PhyloGrok/VCFplots/blob/main/plots/PA_Impact_Plot.png" width="200" height="auto">
+<img src="https://github.com/PhyloGrok/VCFplots/blob/main/plots/PA_Impact_Plot.png" width="400" height="auto">
 
 <h3>Staphylococcus Aureus</h3>
 
