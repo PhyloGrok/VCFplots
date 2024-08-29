@@ -2,7 +2,7 @@
   <img src="https://github.com/PhyloGrok/VCFplots/blob/main/Images/merck_logo.png" width="100" height="auto">
   <img src="https://github.com/PhyloGrok/VCFplots/blob/main/Images/UMBC_logo.png" width="200" height="auto">
 </p>
-<h1>Mutation Rate Meta-Analysis</h1>
+<h1>Mutation Rate Meta-Analysis of Human Pathogenic Bacteria</h1>
 
 
 <h2>Introduction</h2>
