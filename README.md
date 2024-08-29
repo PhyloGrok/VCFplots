@@ -1,4 +1,3 @@
-<h1>Merck Internship 2024</h1>
 <p align="right>
   //Need the bottom for the image 
   <img src="https://github.com/PhyloGrok/VCFplots/blob/main/Images/UMBC_logo.png" width="100" height="40">
@@ -7,6 +6,9 @@
   <img src="https://github.com/PhyloGrok/VCFplots/blob/main/Images/UMBC_logo.png" width="100" height="40">
   
 </p>
+
+<h1>Merck Internship 2024</h1>
+
 
 <h2>Introduction</h2>
   <p>Understanding genetic variations and their impacts is crucial in studying microbial evolution and antibiotic resistance. Deletions, missense mutation, and other types of mutations create variants, which result in differing degrees of protein alteration and play a significant role in the adaptability and survival of bacteria. Visualizing these mutations using circus plots and stacked bar plots allows researchers to identify patterns and trends across different strains. By integrating these visualizations with the theory of neutral evolution, which favors advantageous mutations that are more likely to persist, we can better comprehend the dynamics of bacterial evolution for antibiotic resistance in their genome. This project aims to process vast genomic datasets of Staphylococcus aureus and Pseudomonas aeruginosa to automate variant analysis and ultimately create a comprehensive database to enhance our understanding of genomic mutations and  inform possible further genome studies against antibiotic resistance.</p>
