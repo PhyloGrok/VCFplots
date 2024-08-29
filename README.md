@@ -12,7 +12,7 @@
 
 - Merges all the annotated CSVs together into one .csv file.
 
-Annotation Impact Bar Plot
+[Annotation Impact Bar Plot](https://github.com/PhyloGrok/VCFplots/blob/main/code/Annotation_Impacts_BarPlot.R)
 
 - Visualizes each SRA Run mutation impact with the use of R.
 
