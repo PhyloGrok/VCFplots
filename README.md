@@ -30,6 +30,9 @@
 
 <h3>Pseudomonas Aeruginosa</h3>
 
+<img src="https://github.com/PhyloGrok/VCFplots/blob/main/Images/UMBC_logo.png" width="200" height="auto">
+
+
 <h3>Staphylococcus Aureus</h3>
 
 <h2>Results</h2>
