@@ -1,9 +1,9 @@
 <p align="right>
   //Need the bottom for the image 
   <img src="https://github.com/PhyloGrok/VCFplots/blob/main/Images/UMBC_logo.png" width="100" height="40">
-  <img src="https://github.com/PhyloGrok/VCFplots/blob/main/Images/merck_logo.png" width="100" height="50">
+  <img src="https://github.com/PhyloGrok/VCFplots/blob/main/Images/merck_logo.png" width="100" height="100">
 
-  <img src="https://github.com/PhyloGrok/VCFplots/blob/main/Images/UMBC_logo.png" width="100" height="40">
+  <img src="https://github.com/PhyloGrok/VCFplots/blob/main/Images/UMBC_logo.png" width="100" height="100">
   
 </p>
 
