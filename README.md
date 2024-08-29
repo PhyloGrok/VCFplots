@@ -2,7 +2,7 @@
   <img src="https://github.com/PhyloGrok/VCFplots/blob/main/Images/merck_logo.png" width="100" height="auto">
   <img src="https://github.com/PhyloGrok/VCFplots/blob/main/Images/UMBC_logo.png" width="200" height="auto">
 </p>
-<h1>Merck Internship 2024</h1>
+<h1>Mutation Rate Meta-Analysis</h1>
 
 
 <h2>Introduction</h2>
@@ -14,15 +14,15 @@
   </p>
 <h2>Code</h2>
 
-[Concatenate CSV](https://github.com/PhyloGrok/VCFplots/blob/main/code/Concatenate_CSVs.R)
+[Concatenate CSV.R](https://github.com/PhyloGrok/VCFplots/blob/main/code/Concatenate_CSVs.R)
 
 - Merges all the annotated CSVs together into one .csv file.
 
-[Annotation Impact Bar Plot](https://github.com/PhyloGrok/VCFplots/blob/main/code/Annotation_Impacts_BarPlot.R)
+[Annotation Impact Bar Plot.R](https://github.com/PhyloGrok/VCFplots/blob/main/code/Annotation_Impacts_BarPlot.R)
 
 - Visualizes each SRA Run mutation impact with the use of R.
 
-[QC plot](https://github.com/PhyloGrok/VCFplots/blob/main/code/QC_Plot_SA.R)
+[QC plot.R](https://github.com/PhyloGrok/VCFplots/blob/main/code/QC_Plot_SA.R)
 
 - Visualize viable strains for the experiment considering genomic range to the reference genome of the respective bacterium.
 
