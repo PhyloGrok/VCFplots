@@ -22,6 +22,10 @@
 
 <h2>Plots</h2>
 
+<h3>Pseudomonas Aeruginosa</h3>
+
+<h3>Staphylococcus Aureus</h3>
+
 <h2>Results</h2>
 
 <h2>Acknowledgements</h2>
