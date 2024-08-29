@@ -34,6 +34,9 @@
 
 <h3>Staphylococcus Aureus</h3>
 
+<img src="plots/SA_Impact_Plot.png" width="400" height="auto">
+<img src="plots/SA_QC_Calc_Plot.png" width="400" height="auto">
+
 <h2>Results</h2>
 
 <h2>Acknowledgements</h2>
