@@ -38,6 +38,10 @@
 <img src="plots/SA_QC_Calc_Plot.png" width="400" height="auto">
 
 <h2>Results</h2>
+<h3> <em> Pseudomonas aeruginosa </em> </h3>
+<p>The plot visualized in the Annotation Impact plot it reveals that the generlly more moderate and low mutation impacts being seen in each SRA Run.</p>
+
+<h3> <em>Staphylococcus aureus </em> </h3>
 
 <h2>Acknowledgements</h2>
 UMBC Translational Life Science Technology (TLST) student interns Nhi Luu, Aimee Icaza, and Ketsia Pierrelus are supported by Merck Data Science Fellowship for Observational Research Program and the UMBC College of Natural and Mathematical Sciences.  Nhi Luu developed the annotation scripts and R-Shiny framework and integration. 
