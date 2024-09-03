@@ -45,7 +45,7 @@
 
 <h2>Results</h2>
 <h3> <em> Pseudomonas aeruginosa </em> </h3>
-<p>The plot visualized in the Annotation Impact plot it reveals that the generlly more moderate and low mutation impacts being seen in each SRA Run.</p>
+<p>The plot visualized in the Annotation Impact plot it reveals that the generlly more modifier and low mutation impacts being seen in each SRA Run.</p>
 
 <h3> <em>Staphylococcus aureus </em> </h3>
 
