@@ -50,4 +50,4 @@
 <h3> <em>Staphylococcus aureus </em> </h3>
 
 <h2>Acknowledgements</h2>
-UMBC Translational Life Science Technology (TLST) student interns Nhi Luu, Aimee Icaza, and Ketsia Pierrelus are supported by Merck Data Science Fellowship for Observational Research Program and the UMBC College of Natural and Mathematical Sciences.  Nhi Luu developed the annotation scripts and R-Shiny framework and integration. 
+UMBC Translational Life Science Technology (TLST) student interns Nhi Luu, Aimee Icaza, and Ketsia Pierrelus are supported by Merck Data Science Fellowship for Observational Research Program and the UMBC College of Natural and Mathematical Sciences.  Nhi Luu developed the annotation scripts, R-Shiny framework and integration, also provided refrece scripts to be edited. 
