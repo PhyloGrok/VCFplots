@@ -17,10 +17,12 @@
 [Concatenate CSV.R](https://github.com/PhyloGrok/VCFplots/blob/main/code/Concatenate_CSVs.R)
 
 - Merges all the annotated CSVs together into one .csv file.
+- It utilizes dplr, readr, andd ggplot2 packages. In the code it retrieves the working directory and imports all the csv files of each SRA Run. These files are read into a list and merged into a signgle sata frame with "bind_rows". 
 
 [Annotation Impact Bar Plot.R](https://github.com/PhyloGrok/VCFplots/blob/main/code/Annotation_Impacts_BarPlot.R)
 
 - Visualizes each SRA Run mutation impact with the use of R.
+- It utilizes dplr, readr, andd ggplot2 packages. Reading eacg independent SRA run csv file to filter out rows with missing values in Annotation impact and counts each occurence of each Annotation Impact for the SRA Run. The code then arranged the graph based on "low" impact in descending order creating a stacked bar plot.
 
 [QC plot.R](https://github.com/PhyloGrok/VCFplots/blob/main/code/QC_Plot_SA.R)
 
