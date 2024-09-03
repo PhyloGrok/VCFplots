@@ -24,11 +24,13 @@
 
 <p>Summary: Visualizes each SRA Run mutation impact with the use of R.</p>
 
-- It utilizes dplr, readr, andd ggplot2 packages. Reading eacg independent SRA run csv file to filter out rows with missing values in Annotation impact and counts each occurence of each Annotation Impact for the SRA Run. The code then arranged the graph based on "low" impact in descending order creating a stacked bar plot.
+- It utilizes dplr, readr, and ggplot2 packages. Reading eacg independent SRA run csv file to filter out rows with missing values in Annotation impact and counts each occurence of each Annotation Impact for the SRA Run. The code then arranged the graph based on "low" impact in descending order creating a stacked bar plot.
 
-[QC plot.R](https://github.com/PhyloGrok/VCFplots/blob/main/code/QC_Plot_SA.R)
+[QC plot_SA.R](https://github.com/PhyloGrok/VCFplots/blob/main/code/QC_Plot_SA.R)
 
-- Visualize viable strains for the experiment considering genomic range to the reference genome of the respective bacterium.
+<p>Summary: Visualize viable strains for the experiment considering genomic range to the reference genome of the respective bacterium.</p>
+
+-  It utilizes tidyverse, ggthemes, and ggplot2 packages. The script then reads the CSV file into a data frame and uses ggplot2 to create a scatter plot of the data, mapping Coverage to the x-axis and Count._of._SRA_Run to the y-axis, with points colored by the SRA_Run variable. It adds a polynomial regression line of degree 3.5 to the plot.
 
 <h2>Plots</h2>
 
