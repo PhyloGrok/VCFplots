@@ -24,7 +24,7 @@ ggplot(
   geom_smooth(method = "lm", formula = y ~ poly(x,3.5)) +
   labs(
     title = "QC Metrics and Coverage",
-    subtitle = "Staphylococcus Aureus Coverage by Number of Mutations",
+    subtitle = expression(italic("Staphylococcus Aureus Coverage by Number of Mutations"),
     x = "Coverage", y = "Number of Mutations",
     color = "SRA_Run"
   ) 
