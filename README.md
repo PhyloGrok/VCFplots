@@ -39,7 +39,7 @@
 <img src="https://github.com/PhyloGrok/VCFplots/blob/main/plots/PA_Impact_Plot.png" width="400" height="auto">
 
 <h3> <em>Staphylococcus aureus </em> </h3>
-
+ 
 <img src="plots/SA_Impact_Plot.png" width="400" height="auto">
 <img src="plots/SA_QC_Calc_Plot.png" width="400" height="auto">
 
@@ -48,6 +48,6 @@
 <p>The plot visualized in the Annotation Impact plot reveals that the generally more modifier and low mutation impacts being seen in each SRA Run.</p>
 
 <h3> <em>Staphylococcus aureus </em> </h3>
-
+<p>The Annotation Impact plot provides a visualization of the overall distribution of mutation impacts the SRA Run, highlighting a trend where most mutations occur. There is a prevalent trend in the modifier and low effect, showing a more minor influence on the genetic sequence.</p>
 <h2>Acknowledgements</h2>
 UMBC Translational Life Science Technology (TLST) student interns Nhi Luu, Aimee Icaza, and Ketsia Pierrelus are supported by Merck Data Science Fellowship for Observational Research Program and the UMBC College of Natural and Mathematical Sciences.  Nhi Luu developed the annotation scripts, R-Shiny framework and integration, also provided refrece scripts to be edited. 
