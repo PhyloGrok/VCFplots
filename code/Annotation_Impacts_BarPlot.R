@@ -12,7 +12,7 @@ for(p in packages){
   library(p,character.only = TRUE)
 }
 #opening based on session
-df <- read.csv("../data/QC_PA.csv")
+df <- read.csv("../data/P_aeruginosa/QC_PA.csv")
 class(df)
 #Plot
 #Double check the x and y axis as well as the SRA_Run types with diffrent colors
