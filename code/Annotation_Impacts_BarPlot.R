@@ -12,11 +12,11 @@ for(p in packages){
   library(p,character.only = TRUE)
 }
 #opening based on session
-df <- read.csv("QC_PA.csv")
+df <- read.csv("../data/QC_PA.csv")
 class(df)
 #Plot
 #Double check the x and y axis as well as the SRA_Run types with diffrent colors
-ggplot(
+impactDF <- ggplot(
   data = df,
   mapping = aes(x = Coverage, y = Count.of.SRA_Run )
 ) +
@@ -28,5 +28,7 @@ ggplot(
     x = "Coverage", y = "Number of Mutations",
     color = "SRA_Run"
   ) 
+
+plot(impactDF)
 #Unique checks the diffrent values in df column SRA_Run
 unique(df$SRA_Run)
