@@ -27,8 +27,8 @@ mutation_count_df <- mutation_count_df %>% arrange(desc(Mutation_Count))
 
 # Histogram plot of total amount
 
-totmut <- ggplot
-(data = mutation_count_df, mapping = aes(x = reorder(Type, -Mutation_Count), y = Mutation_Count, fill = Type)) +
+totmut <- ggplot(
+  data = mutation_count_df, mapping = aes(x = reorder(Type, -Mutation_Count), y = Mutation_Count, fill = Type)) +
   geom_bar(stat = "identity") +
   labs(
     title = "Total Mutations",
