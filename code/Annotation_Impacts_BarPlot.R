@@ -48,5 +48,4 @@ png(impactDF)
 dev.off()
 
 plot(impactDF)
-#Unique checks the diffrent values in df column SRA_Run
-unique(df$SRA_Run)
+
