@@ -12,7 +12,7 @@ for(p in packages) {
 }
 
 # Open CSV file
-df <- read.csv("QC_PA.csv")
+df <- read.csv("../data/P_aeruginosa/QC_PA.csv")
 
 # Plot: Double check the x and y axes as well as the SRA_Run types with different colors
 QCplot <- ggplot(
