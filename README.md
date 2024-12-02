@@ -18,7 +18,7 @@
 
 <p>Summary: Merges all the annotated CSVs together into one .csv file.</p>
 
-- It utilizes dplr, readr, andd ggplot2 packages. In the code it retrieves the working directory and imports all the csv files of each SRA Run. These files are read into a list and merged into a signgle sata frame with "bind_rows". 
+- It utilizes dplr, readr, andd ggplot2 packages. In the code it retrieves the working directory and imports all the csv files of each SRA Run. These files are read into a list and merged into a single data frame with "bind_rows". 
 
 [Annotation Impact Bar Plot.R](https://github.com/PhyloGrok/VCFplots/blob/main/code/Annotation_Impacts_BarPlot.R)
 
@@ -31,6 +31,12 @@
 <p>Summary: Visualize viable strains for the experiment considering genomic range to the reference genome of the respective bacterium.</p>
 
 -  It utilizes tidyverse, ggthemes, and ggplot2 packages. The script then reads the CSV file into a data frame and uses ggplot2 to create a scatter plot of the data, mapping Coverage to the x-axis and Count._of._SRA_Run to the y-axis, with points colored by the SRA_Run variable. It adds a polynomial regression line of degree 3.5 to the plot.
+
+[Qxygen and Temperature](https://github.com/PhyloGrok/VCFplots/blob/main/code/Oxy_Temp.R.qmd)
+
+<p>Summary: Visualize the count of temperaure and oxygen requirement.</p>
+
+- It utilizes tidyverse and dplr. The script reads the CSV file where it added "missing" to all the missing values. Seperated Oxygen into a different dataset and did the same for temperature. Then using ggplot2 to make the chart. 
 
 <h2>Plots</h2>
 
