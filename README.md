@@ -38,6 +38,19 @@
 
 - It utilizes tidyverse and dplr. The script reads the CSV file where it added "missing" to all the missing values. Seperated Oxygen into a different dataset and did the same for temperature. Then using ggplot2 to make the chart. 
 
+[Freq_of_CheckM](https://github.com/PhyloGrok/VCFplots/blob/main/code/Freq_of_CheckM.R)
+
+<p>Summary: Visualizes the top 15 most frequent CheckM marker sets</p>
+
+- It uese ggplot and dplr to read the csv script, and then prodceed to use the CheckM.marker.set column. It counted the frequency/mention of each type, then only using the top 15 screated a bar plot that potrays the top 15 most frequent CheckM sets and how much of them there are.
+
+[Annotation_Count](https://github.com/PhyloGrok/VCFplots/blob/main/code/Annotation_Count.R)
+
+<p>Summary: Visualizes the top 10 most frequent CheckM marker sets with regard to comparing pseudogenes and protien-coding</p>
+
+- It uses ggplot and dplt to read and visualize the csv file. Importing the file, it counts the frequency of CheckM's, using it as a coloring scheme for the scatter plot which depict the rate of Annotated Count Gene Protien-coding for pseudogene.
+
+
 <h2>Plots</h2>
 
 <h3> <em> Pseudomonas aeruginosa </em> </h3>
