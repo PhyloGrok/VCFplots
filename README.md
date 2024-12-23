@@ -50,6 +50,12 @@
 
 - It uses ggplot and dplt to read and visualize the csv file. Importing the file, it counts the frequency of CheckMs, using it as a coloring scheme for the scatter plot which depict the rate of Annotated Count Gene Protien-coding for pseudogene.
 
+[Combined Plots](https://github.com/PhyloGrok/VCFplots/blob/main/code/Combined_Plot.R)
+
+<p> Summary: Combined visual of the ChecmM marker sets, scatter, density, bar plot</p>
+
+- The code imports necessary packages like tidyverse and ggplot2 to analyze and visualize genomic data by reading CSV files, filtering the top 4 most frequent CheckM marker sets, summarizing their average gene counts, and creating multiple visualizations including a scatter plot for protein-coding genes and pseudogenes, a density plot, a bar plot with shortened marker names, and a summary table, all combined into a clean 2x2 layout.
+
 
 <h2>Plots</h2>
 
