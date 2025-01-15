@@ -7,9 +7,11 @@ library(ggpubr)
 library(plotly)
 library(readr)
 
+# Load datasets
 Genomics_Ref2 <- read.csv("~/Downloads/Reference_Genomes.csv")
 Archaea <- read.csv("~/Downloads/archaea.csv")
 
+# Define the UI
 ui <- fluidPage(
   titlePanel("Dataset Selection App"),
   
@@ -22,26 +24,28 @@ ui <- fluidPage(
                               "Frequency of CheckM", 
                               "Combined Plots")),
       
-     
+      # Conditional UI for Annotation Count filters
       conditionalPanel(
         condition = "input.plot_choice == 'Annotation Count'",
         selectInput("checkm_filter", "Filter by CheckM Marker Set:",
-                    choices = NULL,  
+                    choices = NULL,  # Populated dynamically
                     multiple = TRUE)
       )
     ),
     
     mainPanel(
-      uiOutput("plot_ui"),  
+      uiOutput("plot_ui"),  # Output for the selected plot or plots
       
       hr(),
       h4("Description"),
-      uiOutput("description_text")  
+      uiOutput("description_text")  # Dynamic description text
     )
   )
 )
 
+# Define the Server
 server <- function(input, output, session) {
+  # Populate the dropdown for filtering Annotation Count
   observe({
     top_checkm <- Genomics_Ref2 %>%
       count(CheckM.marker.set, sort = TRUE) %>%
@@ -50,31 +54,33 @@ server <- function(input, output, session) {
     
     updateSelectInput(session, "checkm_filter", 
                       choices = top_checkm, 
-                      selected = top_checkm)  
+                      selected = top_checkm)  # Default to all
   })
   
+  # Reactive filtered data for Annotation Count
   filtered_data <- reactive({
-    req(input$checkm_filter)  
+    req(input$checkm_filter)  # Ensure selection is not empty
     Genomics_Ref2 %>%
       filter(CheckM.marker.set %in% input$checkm_filter)
   })
   
-
+  # Dynamic rendering of plots based on dropdown choice
   output$plot_ui <- renderUI({
     if (input$plot_choice == "Annotation Count") {
-      plotlyOutput("annotation_plot")  
+      plotlyOutput("annotation_plot")  # Interactive Annotation Count plot
     } else if (input$plot_choice == "Oxygen and Temperature") {
       fluidRow(
-        column(6, plotlyOutput("oxygen_plot")),  
-        column(6, plotlyOutput("temperature_plot"))  
+        column(6, plotlyOutput("oxygen_plot")),  # Oxygen Requirements plot
+        column(6, plotlyOutput("temperature_plot"))  # Temperature Ranges plot
       )
     } else if (input$plot_choice == "Frequency of CheckM") {
-      plotlyOutput("frequency_plot")  
+      plotlyOutput("frequency_plot")  # Sunburst Chart
     } else if (input$plot_choice == "Combined Plots") {
-      plotOutput("combined_plot") 
+      plotOutput("combined_plot")  # Combined scatter, density, bar plot, and table
     }
   })
   
+  # Render the Annotation Count plot
   output$annotation_plot <- renderPlotly({
     if (input$plot_choice == "Annotation Count") {
       p <- ggplot(filtered_data(), aes(
@@ -103,11 +109,12 @@ server <- function(input, output, session) {
   
   
   
+  # Fix for Oxygen and Temperature plots
   output$oxygen_plot <- renderPlotly({
     if (input$plot_choice == "Oxygen and Temperature") {
       oxygen_plot <- Archaea %>%
         count(OxygenReq, name = "Count") %>%
-        filter(!is.na(OxygenReq)) %>%  
+        filter(!is.na(OxygenReq)) %>%  # Exclude missing data
         ggplot(aes(x = reorder(OxygenReq, -Count), y = Count, fill = OxygenReq)) +
         geom_bar(stat = "identity") +
         labs(
@@ -129,7 +136,7 @@ server <- function(input, output, session) {
     if (input$plot_choice == "Oxygen and Temperature") {
       temperature_plot <- Archaea %>%
         count(TemperatureRange, name = "Count") %>%
-        filter(!is.na(TemperatureRange)) %>%  
+        filter(!is.na(TemperatureRange)) %>%  # Exclude missing data
         ggplot(aes(x = reorder(TemperatureRange, -Count), y = Count, fill = TemperatureRange)) +
         geom_bar(stat = "identity") +
         labs(
@@ -152,6 +159,7 @@ server <- function(input, output, session) {
   
   
   
+  # Render the Frequency of CheckM plot (Sunburst)
   output$frequency_plot <- renderPlotly({
     if (input$plot_choice == "Frequency of CheckM") {
       freq_data <- Genomics_Ref2 %>%
@@ -161,7 +169,7 @@ server <- function(input, output, session) {
       plot_ly(
         data = freq_data,
         labels = ~`CheckM.marker.set`,
-        parents = NA,  
+        parents = NA,  # No parent hierarchy
         values = ~n,
         type = 'sunburst',
         textinfo = 'label+percent entry',
@@ -176,8 +184,10 @@ server <- function(input, output, session) {
     }
   })
   
+  # Render the Combined Plots
   output$combined_plot <- renderPlot({
     if (input$plot_choice == "Combined Plots") {
+      # Filter for the top 5 CheckM marker sets
       top_checkm <- Genomics_Ref2 %>%
         count(CheckM.marker.set, sort = TRUE) %>%
         top_n(5, n) %>%
@@ -186,6 +196,7 @@ server <- function(input, output, session) {
       filtered_data <- Genomics_Ref2 %>%
         filter(CheckM.marker.set %in% top_checkm)
       
+      # Create shortened names for marker sets
       short_names <- c(
         "Halobacteriales" = "Halo",
         "Methanosarcinaceae" = "M-Sarc",
@@ -194,11 +205,13 @@ server <- function(input, output, session) {
         "Natrinema" = "Natri"
       )
       
+      # Prepare bar plot data with shortened names
       bar_data <- filtered_data %>%
         group_by(`CheckM.marker.set`) %>%
         summarise(Average_Protein_Coding = mean(Annotation.Count.Gene.Protein.coding)) %>%
         mutate(Short_Name = recode(`CheckM.marker.set`, !!!short_names))
       
+      # Density Plot
       density_plot <- ggplot(filtered_data, aes(x = Annotation.Count.Gene.Protein.coding, 
                                                 fill = `CheckM.marker.set`)) +
         geom_density(alpha = 0.6) +
@@ -209,6 +222,7 @@ server <- function(input, output, session) {
           legend.position = "none"
         )
       
+      # Bar Plot with updated y-axis label
       bar_plot <- ggplot(bar_data, aes(x = reorder(Short_Name, -Average_Protein_Coding), 
                                        y = Average_Protein_Coding, fill = `CheckM.marker.set`)) +
         geom_bar(stat = "identity", alpha = 0.8) +
@@ -220,6 +234,7 @@ server <- function(input, output, session) {
           axis.text.x = element_text(angle = 30, hjust = 1)
         )
       
+      # Summary Table with formatted Mean and SD
       summary_data <- filtered_data %>%
         group_by(`CheckM.marker.set`) %>%
         summarise(
@@ -228,12 +243,14 @@ server <- function(input, output, session) {
           SD = round(sd(Annotation.Count.Gene.Protein.coding), 1)
         )
       
+      # Create the table plot with a title
       table_plot <- ggtexttable(summary_data, rows = NULL, theme = ttheme("classic"))
       table_with_title <- annotate_figure(
         table_plot,
         top = text_grob("C. Table", face = "bold", size = 12)
       )
       
+      # Combine plots without the scatter plot
       ggarrange(
         density_plot, bar_plot, 
         table_with_title,
@@ -244,6 +261,7 @@ server <- function(input, output, session) {
     }
   })
   
+  # Dynamic description for each plot
   output$description_text <- renderUI({
     if (input$plot_choice == "Combined Plots") {
       HTML("<p>The combined plot shows a density plot, bar plot, and a summary table for the top 5 CheckM marker sets in a 2x2 layout.</p>")
@@ -251,4 +269,6 @@ server <- function(input, output, session) {
   })
 }
 
+# Run the app
 shinyApp(ui = ui, server = server)
+
