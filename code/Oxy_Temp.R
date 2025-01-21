@@ -8,7 +8,7 @@ library(ggplot2)
 library(data.table)
 library(readr)
 
-Archaea <- read.csv("~/Downloads/archaea.csv")
+Archaea <- read.csv("/Users/alazarmanakelew/Downloads/archaea.csv")
 
 #OxyReq
 oxygen_plot <- Archaea %>%
