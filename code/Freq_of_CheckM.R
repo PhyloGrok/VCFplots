@@ -5,7 +5,7 @@ library(dplyr)
 library(ggplot2)
 library(readr)
 
-Genomics_Ref2 <- read.csv("~/Downloads/Reference_Genomes.csv")
+Genomics_Ref2 <- read.csv("data/Reference_Genomes.csv")
 
 Genomics_Ref2 %>%
   count(`CheckM.marker.set`) %>%
