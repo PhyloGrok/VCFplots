@@ -1,3 +1,4 @@
+#Alazar
 library(shiny)
 library(tidyverse)
 library(janitor)
@@ -8,8 +9,8 @@ library(plotly)
 library(readr)
 
 # Load datasets
-Genomics_Ref2 <- read.csv("~/Downloads/Reference_Genomes.csv")
-Archaea <- read.csv("~/Downloads/archaea.csv")
+Genomics_Ref2 <- read.csv("data/Reference_Genomes.csv")
+Archaea <- read.csv("data/archaea.csv")
 
 # Define the UI
 ui <- fluidPage(
